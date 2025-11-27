@@ -14,7 +14,7 @@ Office.actions.associate("attachResume", attachResume);
 
 export async function attachResume(event: Office.AddinCommands.Event) {
     // Placeholder constants - User to update these
-    const RESUME_URL = "https://ucla-my.sharepoint.com/:b:/g/personal/nivesh_ucla_edu/IQDJInpF3ZWrRbnraqFsGioWAYQ9r3TycOcG4Jmm_hmoWRE?e=kxiDNf&download=1";
+    const RESUME_URL = window.location.origin + "/assets/resume.pdf";
     const RESUME_NAME = "Nivesh_Elangovanraaj_Resume.pdf";
 
     const item = Office.context.mailbox.item;
