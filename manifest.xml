@@ -6,11 +6,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Outlook Resume Add-in"/>
   <Description DefaultValue="Instantly attach your professional resume to emails with one click."/>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-80.png"/>
-  <SupportUrl DefaultValue="https://localhost:3000/help"/>
+  <IconUrl DefaultValue="https://nivesh22.github.io/outlook-resume-addin/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://nivesh22.github.io/outlook-resume-addin/assets/icon-80.png"/>
+  <SupportUrl DefaultValue="https://nivesh22.github.io/outlook-resume-addin/help"/>
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://nivesh22.github.io/outlook-resume-addin</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -71,13 +71,13 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="icon16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-          <bt:Image id="icon32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-          <bt:Image id="icon80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+          <bt:Image id="icon16" DefaultValue="https://nivesh22.github.io/outlook-resume-addin/assets/icon-16.png"/>
+          <bt:Image id="icon32" DefaultValue="https://nivesh22.github.io/outlook-resume-addin/assets/icon-32.png"/>
+          <bt:Image id="icon80" DefaultValue="https://nivesh22.github.io/outlook-resume-addin/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="funcFile" DefaultValue="https://localhost:3000/taskpane.html"/>
-          <bt:Url id="taskpaneUrl" DefaultValue="https://localhost:3000/taskpane.html"/>
+          <bt:Url id="funcFile" DefaultValue="https://nivesh22.github.io/outlook-resume-addin/taskpane.html"/>
+          <bt:Url id="taskpaneUrl" DefaultValue="https://nivesh22.github.io/outlook-resume-addin/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="groupLabel" DefaultValue="Resume Add-in"/>

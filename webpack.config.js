@@ -28,6 +28,11 @@ module.exports = {
             template: "./src/taskpane/taskpane.html",
             chunks: ["taskpane"],
         }),
+        new HtmlWebpackPlugin({
+            filename: "index.html",
+            template: "./src/index.html",
+            chunks: [],
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {
