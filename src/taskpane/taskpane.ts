@@ -28,7 +28,7 @@ export async function attachResume(event: Office.AddinCommands.Event) {
     // Show a "processing" notification
     const processingMessage: Office.NotificationMessageDetails = {
         type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
-        message: "Attaching resume...",
+        message: "Attaching resume (v2)...",
         icon: "icon-16", // Ensure this matches an icon ID in manifest (we used icon16 there, let's check manifest)
     };
     item.notificationMessages.replaceAsync("action", processingMessage);
