@@ -7,53 +7,44 @@ A minimal Outlook Web Add-in that attaches a resume from OneDrive to the current
 - Node.js and npm installed.
 - Outlook on the web or Outlook for Windows.
 
-## Setup
+## Deployment & Setup
 
-1.  **Install dependencies:**
-    Open a terminal in the project directory and run:
+This add-in is configured to be hosted on **GitHub Pages**.
+
+1.  **Push to GitHub**:
+    Push this code to a new GitHub repository.
     ```bash
-    npm install
+    git init
+    git add .
+    git commit -m "Initial commit"
+    git branch -M main
+    git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+    git push -u origin main
     ```
 
-2.  **Start the development server:**
-    ```bash
-    npm start
-    ```
-    This will start a local server at `https://localhost:3000`.
-    Note: You might see a warning about self-signed certificates. This is normal for development. You may need to open `https://localhost:3000/taskpane.html` in your browser once and accept the certificate warning.
+2.  **Enable GitHub Pages**:
+    - Go to Repo Settings -> Pages.
+    - Source: **Deploy from a branch**.
+    - Branch: **`gh-pages`** / **`/(root)`**.
+    - Save.
 
-## Sideloading the Add-in
+3.  **Update Manifest**:
+    - Ensure `manifest.xml` points to your GitHub Pages URL (e.g., `https://yourname.github.io/repo-name`).
+    - (The current manifest is set to: `https://nivesh22.github.io/outlook-resume-addin`).
 
-### Outlook on the Web (OWA)
+## Sideloading
 
-1.  Go to [Outlook on the web](https://outlook.office.com/mail/).
-2.  Create a **New Message**.
-3.  Click the **...** (More actions) menu at the bottom of the compose window (or in the ribbon).
-4.  Select **Get Add-ins**.
-5.  Go to **My add-ins**.
-6.  Scroll down to **Custom add-ins**.
-7.  Click **Add a custom add-in** -> **Add from file...**.
-8.  Select the `manifest.xml` file from this project directory.
-9.  Click **Install**.
-
-### Outlook for Windows
-
-1.  Open Outlook.
-2.  Click **Get Add-ins** (usually on the Home tab).
-3.  Go to **My add-ins**.
-4.  Scroll down to **Custom add-ins**.
-5.  Click **Add a custom add-in** -> **Add from file...**.
-6.  Select the `manifest.xml` file from this project directory.
-7.  Click **Install**.
+1.  Open Outlook (Web or Desktop).
+2.  **New Message** -> **...** -> **Get Add-ins** -> **My add-ins**.
+3.  **Add a custom add-in** -> **Add from file...**.
+4.  Select `manifest.xml`.
 
 ## Usage
 
-1.  Open a new email or reply to an email.
-2.  Look for the **Resume Add-in** group in the ribbon (it might be under the "Message" tab or the "..." menu).
-3.  Click the **Attach Resume** button.
-4.  A task pane will open on the right.
-5.  Click the **Attach my resume** button.
-6.  The status will update to indicate success or failure.
+1.  Compose a new email.
+2.  Click the **Attach Resume** button in the ribbon.
+3.  **Wait a moment**: You will see a "Attaching resume..." notification at the top of the email.
+4.  **Done**: The resume will be attached automatically.
 
 ## Configuration
 
